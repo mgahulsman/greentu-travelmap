@@ -1,0 +1,63 @@
+const svg = d3.select("svg");
+const width = window.innerWidth;
+const height = window.innerHeight;
+
+svg.attr("width", width);
+svg.attr("height", height);
+
+let scale;
+if (width < 768) { // mobiel
+  scale = 2.5 * width;
+} else { // desktop
+  scale = width;
+}
+
+const projection = d3.geoMercator()
+    .center([10, 51])
+    .scale(scale)
+    .translate([width / 2, height / 2]);
+
+const path = d3.geoPath().projection(projection);
+
+const zoom = d3.zoom()
+    .scaleExtent([0.5, 8])
+    .on("zoom", zoomed);
+
+svg.call(zoom);
+
+function zoomed(event) {
+    // Pas alleen de paden (landgebieden) aan
+    svg.selectAll("path").attr("transform", event.transform);
+
+    // Voor de steden en labels projecteren we opnieuw
+    svg.selectAll(".city-group")
+        .attr("transform", d => {
+            const coords = projection([d.lng, d.lat]);
+            // Pas de nieuwe zoom-transformatie toe op de geprojecteerde coördinaten
+            return `translate(${event.transform.applyX(coords[0])}, ${event.transform.applyY(coords[1])})`;
+        });
+}
+
+// Load the TopoJSON file
+d3.json("../data/map.topojson").then(function(data) {
+    drawMap(data); 
+}).catch(function(error) {
+    console.error("Error loading the TopoJSON file:", error);
+});
+
+// Function to draw the map
+function drawMap(data) {
+    const countries = topojson.feature(data, data.objects.collection);
+  
+    // Definieer de uniforme kleur en opaciteit
+    const fillColor = "#2a6f97"; // Je kunt hier de gewenste kleur instellen
+
+    svg.selectAll("path")
+        .data(countries.features)
+        .enter().append("path")
+        .attr("d", path)
+        .attr("fill", fillColor)
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 0.5);
+}
+
