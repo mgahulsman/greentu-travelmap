@@ -21,7 +21,7 @@ function showPopup(cityData) {
     let roundedTrainEmission = Math.round(cityData.trainEmission);
     let roundedBusEmission = Math.round(cityData.busEmission);
 
-    let startProgress = 25;
+    let startProgress = 50;
 
     // Start progress bars with emission values
     animateProgressBar('.plane-progress', startProgress, flightEmissionPercentage, roundedFlightEmission + ' kg');
