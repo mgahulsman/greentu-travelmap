@@ -19,6 +19,11 @@
     z-index: 1001;
 }
 
+.city-group {
+    position: relative;
+    z-index: 10;
+}
+
 
 .city:hover {
     cursor: pointer;

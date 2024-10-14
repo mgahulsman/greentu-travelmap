@@ -41,16 +41,15 @@ function zoomed(event) {
 // Load the TopoJSON file
 d3.json("../data/map.topojson").then(function(data) {
     drawMap(data); 
+    loadCities();
 }).catch(function(error) {
     console.error("Error loading the TopoJSON file:", error);
 });
 
-// Function to draw the map
 function drawMap(data) {
     const countries = topojson.feature(data, data.objects.collection);
   
-    // Definieer de uniforme kleur en opaciteit
-    const fillColor = "#2a6f97"; // Je kunt hier de gewenste kleur instellen
+    const fillColor = "#2a6f97"; 
 
     svg.selectAll("path")
         .data(countries.features)

@@ -1,11 +1,8 @@
-
 let citiesData = [];
 
 function loadCities() {
     d3.json("../data/location-data.json").then(function(cities) {
-        citiesData = cities;
-        console.log("Cities loaded:", cities);
-        
+        citiesData = cities;      
         drawCitiesWithLabels(cities); // Groepeert steden en labels samen
     }).catch(function(error) {
         console.error("Error loading the cities JSON file:", error);
@@ -23,7 +20,8 @@ function drawCitiesWithLabels(cities) {
         })
         .on("click", function(event, d) {
             showPopup(d);
-        });
+        })
+        .raise();  // Brengt de stadselementen naar voren;
 
     // Voeg de cirkel voor de stad toe
     cityGroups.append("circle")
@@ -39,4 +37,4 @@ function drawCitiesWithLabels(cities) {
         .text(d => d.name);
 }
 
-loadCities();
+// loadCities(); // gebeurt nu in 
