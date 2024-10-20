@@ -49,7 +49,7 @@ d3.json("../data/map.topojson").then(function(data) {
 function drawMap(data) {
     const countries = topojson.feature(data, data.objects.collection);
   
-    const fillColor = "#2a6f97"; 
+    const fillColor = "#009B77"; 
 
     svg.selectAll("path")
         .data(countries.features)
@@ -57,6 +57,6 @@ function drawMap(data) {
         .attr("d", path)
         .attr("fill", fillColor)
         .attr("stroke", "#fff")
-        .attr("stroke-width", 0.5);
+        .attr("stroke-width", 0.7);
 }
 

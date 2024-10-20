@@ -21,14 +21,12 @@ function drawCitiesWithLabels(cities) {
         .on("click", function(event, d) {
             showPopup(d);
         })
-        .raise();  // Brengt de stadselementen naar voren;
+        .raise();  // Brengt de markers naar voren;
 
-    // Voeg de cirkel voor de stad toe
     cityGroups.append("circle")
         .attr("class", "city")
-        .attr("r", 10);  // Stel de straal van de cirkel in
+        .attr("r", 10); 
 
-    // Voeg het label toe voor steden waar 'primary' is 'y'
     cityGroups.filter(d => d.primary === 'y')
         .append("text")
         .attr("class", "city-label")
