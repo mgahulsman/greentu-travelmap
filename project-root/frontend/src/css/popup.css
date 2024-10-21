@@ -131,6 +131,9 @@
 }
 
 @media (max-width: 600px) {
+    .popup {
+        width: 90%;
+    }
     .vehicles {
         flex-direction: column;
         margin-left: 10px;
