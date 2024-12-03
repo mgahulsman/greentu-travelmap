@@ -6,6 +6,7 @@
 @import 'layout.css'; */
 
 @import 'base.css';
+@import 'colors.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import 'markers.css';
 @import 'popup.css';
