@@ -5,3 +5,9 @@ Dingen die gecheckt moeten worden:
 - Uitzoeken waarom de steden er soms onder laden
 - De icons iets groter maken
 - de font-size and thickness van de popup-title wijzigen
+
+
+Gebruikte py libs:
+- openpyxl
+- pandas
+- xlrd

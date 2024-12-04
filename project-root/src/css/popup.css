@@ -5,9 +5,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    background-color: #f8f9fa;
+    background-color: var(--white-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    cursor: default;
 }
 
 .popup-content {
@@ -31,16 +32,19 @@
     align-items: center;
 }
 
+#popup-title{
+    margin-left: 30px;
+}
+
 .vehicle {
-    padding: 0;
-    margin-top: 30px;
     width: 90%;
+    margin-bottom: 20px;
 }
 
 .vehicle-type {
     padding-bottom: 2px;
     border-bottom: 1px solid #000;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-right: 30px;
     position: relative;
 }
@@ -78,7 +82,7 @@
     margin-right: 10px;
 }
 
-.time-text {
+.time-text, .carbon-text {
     font-size: 0.8rem;
     color: #333;
 }
@@ -91,49 +95,46 @@
 
 .carbon-icon {
     height: auto;
+}
+
+.carbon-text{
+    margin-left: 10px;
     margin-right: 10px;
 }
 
-.carbon-amount {
-    width: 100%;
-    background-color: #2a6f97;
-    border-radius: 30px;
-    color: #fff;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.carbon-text {
-    font-size: 0.8rem;
-}
 
 .progress-border {
     width: 100%;
-    background-color: #e9ecef;
-    border: 1px solid #2a6f97;
+    background-color: var(--progress-bar-popup-color);
+    border: 1px solid var(--water-color);
     border-radius: 20px;
     height: 30px;
     font-size: 0.8rem;
 }
 
 .progress-done {
-    color: #fff;
-    height: auto;
-    background: #2a6f97;
+    background: var(--water-color);
     border-radius: 20px;
     height: 30px;
     display: grid;
-    place-items: center;
     width: 0;
     transition: width .5s ease;
     border: 2px;
 }
 
+
+
 @media (max-width: 600px) {
     .popup {
         width: 90%;
+        max-height: 80vh; /* 80% van de viewport hoogte */
+        overflow-y: scroll; 
     }
+
+    #popup-title{
+        margin-left: 10px;
+    }
+
     .vehicles {
         flex-direction: column;
         margin-left: 10px;
@@ -142,6 +143,6 @@
 
     .vehicle {
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
 }

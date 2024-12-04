@@ -25,14 +25,12 @@ function drawCitiesWithLabels(cities) {
 
     cityGroups.append("circle")
         .attr("class", "city")
-        .attr("r", 10); 
+        .attr("r", 8); 
 
     cityGroups.filter(d => d.primary === 'y')
         .append("text")
         .attr("class", "city-label")
-        .attr("x", 17) // Zet de positie van de label naast de stad
-        .attr("y", 6)  // Zet de positie van de label iets lager
+        .attr("x", 11) // Zet de positie van de label naast de stad
+        .attr("y", 5)  // Zet de positie van de label iets lager
         .text(d => d.name);
 }
-
-// loadCities(); // gebeurt nu in 

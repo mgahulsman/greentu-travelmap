@@ -49,14 +49,15 @@ d3.json("../data/map.topojson").then(function(data) {
 function drawMap(data) {
     const countries = topojson.feature(data, data.objects.collection);
   
-    const fillColor = "#009B77"; 
+    const fillColor = "var(--land-color)"; 
 
     svg.selectAll("path")
         .data(countries.features)
         .enter().append("path")
         .attr("d", path)
         .attr("fill", fillColor)
-        .attr("stroke", "#fff")
-        .attr("stroke-width", 0.7);
+        .attr("stroke", "var(--white-color)")
+        .attr("stroke-width", 0.5)
+        .attr("class", "land"); // Create the class land
 }
 

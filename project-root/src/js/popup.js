@@ -4,37 +4,43 @@ function showPopup(cityData) {
     title.textContent = `${cityData.name}`;
     popup.style.display = 'block';
 
-    // Update travel times
+    // Place travel times
     document.getElementById('plane-time').textContent = formatTime(cityData.flightTime);
     document.getElementById('train-time').textContent = formatTime(cityData.trainTime);
     document.getElementById('bus-time').textContent = formatTime(cityData.busTime);
 
-    // Calculate maximum emission
+    // Place travel emmission
+    document.getElementById('plane-emission').textContent = Math.round(cityData.flightEmission) + "kg";
+    document.getElementById('train-emission').textContent = Math.round(cityData.trainEmission) + "kg";
+    document.getElementById('bus-emission').textContent = Math.round(cityData.busEmission) + "kg";
+    
     let maximumEmission = Math.max(cityData.flightEmission, cityData.trainEmission, cityData.busEmission);
-
     let flightEmissionPercentage = (cityData.flightEmission / maximumEmission) * 100;
     let trainEmissionPercentage = (cityData.trainEmission / maximumEmission) * 100;
     let busEmissionPercentage = (cityData.busEmission / maximumEmission) * 100;
 
-    // Round emissions to nearest whole number
-    let roundedFlightEmission = Math.round(cityData.flightEmission);
-    let roundedTrainEmission = Math.round(cityData.trainEmission);
-    let roundedBusEmission = Math.round(cityData.busEmission);
-
-    let startProgress = 50;
+    let startProgress = 15;
 
     // Start progress bars with emission values
-    animateProgressBar('.plane-progress', startProgress, flightEmissionPercentage, roundedFlightEmission + ' kg');
-    animateProgressBar('.train-progress', startProgress, trainEmissionPercentage, roundedTrainEmission + ' kg');
-    animateProgressBar('.bus-progress', startProgress, busEmissionPercentage, roundedBusEmission + ' kg');
+    animateProgressBar('.plane-progress', startProgress, flightEmissionPercentage);
+    animateProgressBar('.train-progress', startProgress, trainEmissionPercentage);
+    animateProgressBar('.bus-progress', startProgress, busEmissionPercentage);
 }
 
 function formatTime(timeStr) {
-    const [hours, minutes, seconds] = timeStr.split(":").map(Number);
-    return `${hours}h ${minutes}m`;
-}
+    const [days, hours, minutes] = timeStr.split(":").map(Number);
+    if (days === 0) {
+      if (hours === 0) {
+        return `${minutes}m`; 
+      } else {
+        return `${hours}h ${minutes}m`;
+      }
+    } else {
+      return `${days}d ${hours}h ${minutes}m`;
+    }
+  }
 
-function animateProgressBar(selector, initialWidth, finalWidth, emissionValue) {
+function animateProgressBar(selector, initialWidth, finalWidth) {
     var elem = document.querySelector(selector);
     var width = initialWidth;
 
@@ -45,20 +51,16 @@ function animateProgressBar(selector, initialWidth, finalWidth, emissionValue) {
             if (width >= finalWidth) {
                 width = finalWidth; // Ensure width doesn't exceed finalWidth
                 clearInterval(main);
-                elem.innerHTML = emissionValue; // Set emission value when done
             } else {
                 width++;
                 elem.style.width = width + "%";
-                elem.innerHTML = emissionValue; // Set emission value continuously
             }
         }
     } else {
         // If finalWidth is equal to initialWidth, set it directly
         elem.style.width = width + "%";
-        elem.innerHTML = emissionValue;
     }
 }
-
 
 function closePopup() {
     document.querySelector(".plane-progress").style.width = "0%";
