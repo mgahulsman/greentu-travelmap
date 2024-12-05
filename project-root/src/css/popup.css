@@ -127,7 +127,7 @@
 @media (max-width: 600px) {
     .popup {
         width: 90%;
-        max-height: 80vh; /* 80% van de viewport hoogte */
+        max-height: 80vh;
         overflow-y: scroll; 
     }
 

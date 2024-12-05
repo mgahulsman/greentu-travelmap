@@ -225,7 +225,7 @@
         "busEmission": 51.854000000000006,
         "lat": 39.4699075,
         "lng": -0.3762881,
-        "primary": "n"
+        "primary": "y"
     },
     {
         "name": "Madrid",
@@ -261,7 +261,7 @@
         "busEmission": 4.706,
         "lat": 50.8465573,
         "lng": 4.351697,
-        "primary": "y"
+        "primary": "n"
     },
     {
         "name": "Gent",
@@ -561,7 +561,7 @@
         "busEmission": 30.836000000000002,
         "lat": 48.2083537,
         "lng": 16.3725042,
-        "primary": "y"
+        "primary": "n"
     },
     {
         "name": "Linz",
@@ -876,18 +876,6 @@
         "primary": "n"
     },
     {
-        "name": "Copenhagen",
-        "flightTime": "00:05:28",
-        "flightEmission": 135.3,
-        "trainTime": "00:11:33",
-        "trainEmission": 42.5,
-        "busTime": "00:14:33",
-        "busEmission": 22.1,
-        "lat": 55.6760968,
-        "lng": 12.5683371,
-        "primary": "y"
-    },
-    {
         "name": "Lund",
         "flightTime": "00:06:06",
         "flightEmission": 139.70000000000002,
@@ -897,7 +885,7 @@
         "busEmission": 23.400000000000002,
         "lat": 55.7046601,
         "lng": 13.1910073,
-        "primary": "n"
+        "primary": "y"
     },
     {
         "name": "Goteborg",
@@ -934,5 +922,17 @@
         "lat": 59.9138688,
         "lng": 10.7522454,
         "primary": "y"
+    },
+    {
+        "name": "Copenhagen",
+        "flightTime": "00:05:28",
+        "flightEmission": 135.3,
+        "trainTime": "00:11:33",
+        "trainEmission": 42.5,
+        "busTime": "00:14:33",
+        "busEmission": 22.1,
+        "lat": 55.6760968,
+        "lng": 12.5683371,
+        "primary": "n"
     }
 ]
