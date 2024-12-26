@@ -14,12 +14,19 @@
     <h1 class="header-text white-background"><span class="normal-text white-background">Green Travel Map</span><span class="medium-light-text white-background"> | Demo</span></h1>
 
     <div id="map-container">
-        <!-- <div id="search-container">
-            <input type="text" id="search-input" placeholder="Search for a city...">
-            <div id="dropdown" class="dropdown"></div> 
-        </div> -->
-        <!-- <div class="bronvermelding">© EuroGeographics for the administrative boundaries</div>         -->
         <svg id="map"></svg>
+    </div>
+    <!-- <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search for a city...">
+        <div id="dropdown" class="dropdown"></div> 
+    </div> -->
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search for a city...">
+        <div id="dropdown" class="dropdown">
+            <ul>
+                <li id="dropdown-item"></li>
+            </ul>
+        </div> 
     </div>
     <div class="bronvermelding italic-text">© EuroGeographics for the administrative boundaries</div>
  
@@ -28,7 +35,7 @@
             <span class="close" onclick="closePopup()">&times;</span>
             <h4 id="popup-title"></h4>
             <div class="vehicles">
-                <div class="vehicle">
+                <div class="vehicle" id="plane">
                     <h2 class="vehicle-type normal-text">Plane 
                         <img src="assets/pop-up-images/plane.png" alt="icon" class="vehicle-icon plane-icon">
                     </h2>
@@ -44,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="vehicle">
+                <div class="vehicle" id="train">
                     <h2 class="vehicle-type normal-text">Train 
                         <img src="assets/pop-up-images/train.png" alt="icon" class="vehicle-icon train-icon">
                     </h2>
@@ -60,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="vehicle">
+                <div class="vehicle" id="bus">
                     <h2 class="vehicle-type normal-text">Bus 
                         <img src="assets/pop-up-images/bus.png" alt="icon" class="vehicle-icon bus-icon">
                     </h2>
@@ -81,6 +88,7 @@
     </div>
 
     <script src="js/draw-map.js"></script>
+    <script src="js/search-cities.js"></script>
     <script src="js/city-markers.js"></script>
     <script src="js/popup.js"></script>
     

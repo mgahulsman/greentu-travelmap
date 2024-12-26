@@ -4,6 +4,15 @@ function showPopup(cityData) {
     title.textContent = `${cityData.name}`;
     popup.style.display = 'block';
 
+    if (cityData.planeTime == "00:00:00" && cityData.planeEmission == 0.0){
+      document.getElementById('plane').style.display = "none";
+    }
+    if (cityData.trainTime == "00:00:00" && cityData.trainEmission == 0.0){
+      document.getElementById('train').style.display = "none";
+    }
+    if (cityData.busTime == "00:00:00" && cityData.busEmission == 0.0){
+      document.getElementById('bus').style.display = "none";
+    }
     // Place travel times
     document.getElementById('plane-time').textContent = formatTime(cityData.flightTime);
     document.getElementById('train-time').textContent = formatTime(cityData.trainTime);
