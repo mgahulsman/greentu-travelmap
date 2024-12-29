@@ -25,6 +25,14 @@ body {
     text-align: center;
 }
 
+.greentu-logo{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;    
+    width: 150px;
+    height: auto;
+}
+
 .bronvermelding {
     position: fixed;
     bottom: 10px;

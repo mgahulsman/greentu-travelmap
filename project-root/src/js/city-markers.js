@@ -1,17 +1,14 @@
-let citiesData = [];
-
 function loadCities() {
-    d3.json("../data/location-data.json").then(function(cities) {
-        citiesData = cities;      
-        drawCitiesWithLabels(cities); // Groepeert steden en labels samen
+    d3.json("../data/location-data.json").then(function(cityData) {
+        drawCitiesWithLabels(cityData); // Groepeert steden en labels samen
     }).catch(function(error) {
         console.error("Error loading the cities JSON file:", error);
     });
 }
 
-function drawCitiesWithLabels(cities) {
+function drawCitiesWithLabels(cityData) {
     const cityGroups = svg.selectAll(".city-group")
-        .data(cities)
+        .data(cityData)
         .enter().append("g")  // Voeg een 'g' element toe voor elke stad
         .attr("class", "city-group")
         .attr("transform", d => {

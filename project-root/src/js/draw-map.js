@@ -36,11 +36,15 @@ function zoomed(event) {
             // Pas de nieuwe zoom-transformatie toe op de geprojecteerde coördinaten
             return `translate(${event.transform.applyX(coords[0])}, ${event.transform.applyY(coords[1])})`;
         });
+
+    svg.selectAll(".delft")
+        .attr("transform", event.transform);
 }
 
 // Load the TopoJSON file
 d3.json("../data/map.topojson").then(function(data) {
     drawMap(data); 
+    loadDelft()
     loadCities();
 }).catch(function(error) {
     console.error("Error loading the TopoJSON file:", error);

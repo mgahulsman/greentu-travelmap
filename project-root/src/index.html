@@ -8,9 +8,17 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
 
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
     <title>Green Travel Map</title>
 </head>
 <body>
+
     <h1 class="header-text white-background"><span class="normal-text white-background">Green Travel Map</span><span class="medium-light-text white-background"> | Demo</span></h1>
 
     <div id="map-container">
@@ -28,6 +36,9 @@
             </ul>
         </div> 
     </div>
+
+    <img class="greentu-logo" src="assets/pop-up-images/greentu-logo-2022-white.png" alt="GreenTU Logo">
+
     <div class="bronvermelding italic-text">© EuroGeographics for the administrative boundaries</div>
  
     <div id="popup" class="popup white-background">
@@ -88,6 +99,7 @@
     </div>
 
     <script src="js/draw-map.js"></script>
+    <script src="js/load-delft.js"></script>
     <script src="js/search-cities.js"></script>
     <script src="js/city-markers.js"></script>
     <script src="js/popup.js"></script>
