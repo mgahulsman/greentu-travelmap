@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoekbalk Voorbeeld</title>
+  <style>
+    #search-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative; /* Relatieve positionering voor de dropdown */
+        width: 200px; /* Specifieke breedte voor de container */
+        margin: 50px auto; /* Centreer de container op de pagina */
+    }
+
+    #search-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%; /* Zorg ervoor dat de input de breedte van de container vult */
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 10;
+    }
+
+    .dropdown ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-item {
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+    .dropdown-item:hover {
+        background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Zoek een stad...">
+    <div id="dropdown" class="dropdown">
+      <ul></ul>
+    </div>
+  </div>
+
+  <script>
+    const steden = [
+  "Amsterdam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven", "Groningen", "Tilburg", "Almere", "Breda", "Nijmegen"
+    ];
+
+    const searchInput = document.getElementById('search-input');
+    const dropdown = document.getElementById('dropdown');
+    const dropdownList = dropdown.querySelector('ul');
+
+    searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    const filteredSteden = steden.filter(stad => stad.toLowerCase().includes(searchTerm));
+
+    dropdownList.innerHTML = '';
+
+    filteredSteden.forEach(stad => {
+        const listItem = document.createElement('li');
+        listItem.textContent = stad;
+        listItem.classList.add('dropdown-item');
+        dropdownList.appendChild(listItem);
+    });
+
+    dropdown.style.display = filteredSteden.length > 0 ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

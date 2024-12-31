@@ -46,8 +46,6 @@ body {
     background-color: var(--white-color);
 }
 
-
-
 @media screen and (max-width: 600px) {
     .header-text{
         font-size: 0.7rem;
@@ -55,9 +53,15 @@ body {
     }
 
     .bronvermelding { 
-        left: 0;
-        font-size: 10px;
-        width: 100%;
-        text-align: center;
+        width: 200px;
+        text-align: right;
       }
+
+      .greentu-logo{
+        position: fixed;
+        bottom: 15px;
+        left: 15px;    
+        width: 100px;
+        height: auto;
+    }
 }
