@@ -118,7 +118,7 @@
     height: 30px;
     display: grid;
     width: 0;
-    transition: width .5s ease;
+    transition: width 1s linear;
     border: 2px;
 }
 
