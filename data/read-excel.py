@@ -60,7 +60,10 @@ for column in time_columns:
     df[column] = format_time(df[column]) 
 
 df.replace(np.nan, 0, inplace=True)
-df_end = df
+df_end = pd.concat([
+    df[df['primary'].isin(['n'])],  # Rijen met 'n'
+    df[~df['primary'].isin(['n'])]  # Daarna de rest
+])
 
 # Convert DataFrame to dictionary
 data_dict = df_end.to_dict(orient='records')

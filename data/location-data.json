@@ -1,29 +1,5 @@
 [
     {
-        "name": "Delft (departure location)",
-        "flightTime": "00:00:00",
-        "flightEmission": 0.0,
-        "trainTime": "00:00:00",
-        "trainEmission": 0.0,
-        "busTime": "00:00:00",
-        "busEmission": 0.0,
-        "lat": 52.0115769,
-        "lng": 4.3570677,
-        "primary": "d"
-    },
-    {
-        "name": "London",
-        "flightTime": "00:05:28",
-        "flightEmission": 127.8,
-        "trainTime": "00:04:20",
-        "trainEmission": 13.2,
-        "busTime": "00:11:03",
-        "busEmission": 14.222000000000001,
-        "lat": 51.5072,
-        "lng": -0.1275,
-        "primary": "y"
-    },
-    {
         "name": "Manchester",
         "flightTime": "00:05:16",
         "flightEmission": 118.1,
@@ -72,30 +48,6 @@
         "primary": "n"
     },
     {
-        "name": "Bristol",
-        "flightTime": "00:05:26",
-        "flightEmission": 115.2,
-        "trainTime": "00:07:59",
-        "trainEmission": 23.7,
-        "busTime": "00:15:38",
-        "busEmission": 17.68,
-        "lat": 51.4536,
-        "lng": -2.5975,
-        "primary": "y"
-    },
-    {
-        "name": "Dublin",
-        "flightTime": "00:05:49",
-        "flightEmission": 115.3,
-        "trainTime": "00:00:00",
-        "trainEmission": 0.0,
-        "busTime": "00:00:00",
-        "busEmission": 0.0,
-        "lat": 53.3498053,
-        "lng": -6.2603097,
-        "primary": "y"
-    },
-    {
         "name": "Belfast",
         "flightTime": "00:05:29",
         "flightEmission": 117.3,
@@ -106,18 +58,6 @@
         "lat": 54.597285,
         "lng": -5.93012,
         "primary": "n"
-    },
-    {
-        "name": "Paris",
-        "flightTime": "00:05:38",
-        "flightEmission": 102.0,
-        "trainTime": "00:02:55",
-        "trainEmission": 7.3,
-        "busTime": "00:07:22",
-        "busEmission": 12.298000000000002,
-        "lat": 48.8567,
-        "lng": 2.3522,
-        "primary": "y"
     },
     {
         "name": "Nancy",
@@ -204,18 +144,6 @@
         "primary": "n"
     },
     {
-        "name": "Bordeaux",
-        "flightTime": "00:05:59",
-        "flightEmission": 156.9,
-        "trainTime": "00:06:27",
-        "trainEmission": 11.4,
-        "busTime": "00:16:13",
-        "busEmission": 27.482,
-        "lat": 44.837789,
-        "lng": -0.57918,
-        "primary": "y"
-    },
-    {
         "name": "Lille",
         "flightTime": "00:06:14",
         "flightEmission": 100.8,
@@ -252,30 +180,6 @@
         "primary": "n"
     },
     {
-        "name": "Barcelona",
-        "flightTime": "00:06:16",
-        "flightEmission": 119.7,
-        "trainTime": "00:11:47",
-        "trainEmission": 18.8,
-        "busTime": "01:01:13",
-        "busEmission": 39.104,
-        "lat": 41.3828939,
-        "lng": 2.1774322,
-        "primary": "y"
-    },
-    {
-        "name": "Valencia",
-        "flightTime": "00:07:04",
-        "flightEmission": 175.8,
-        "trainTime": "00:14:39",
-        "trainEmission": 29.5,
-        "busTime": "01:05:48",
-        "busEmission": 51.854000000000006,
-        "lat": 39.4699075,
-        "lng": -0.3762881,
-        "primary": "y"
-    },
-    {
         "name": "Salamanca",
         "flightTime": "00:00:00",
         "flightEmission": 0.0,
@@ -288,18 +192,6 @@
         "primary": "n"
     },
     {
-        "name": "Madrid",
-        "flightTime": "00:06:19",
-        "flightEmission": 174.3,
-        "trainTime": "00:14:59",
-        "trainEmission": 36.2,
-        "busTime": "01:03:18",
-        "busEmission": 45.344,
-        "lat": 40.4167047,
-        "lng": -3.7035825,
-        "primary": "y"
-    },
-    {
         "name": "Porto",
         "flightTime": "00:07:19",
         "flightEmission": 181.8,
@@ -310,18 +202,6 @@
         "lat": 41.1579438,
         "lng": -8.6291053,
         "primary": "n"
-    },
-    {
-        "name": "Lisbon",
-        "flightTime": "00:07:04",
-        "flightEmission": 193.3,
-        "trainTime": "00:00:00",
-        "trainEmission": 0.0,
-        "busTime": "01:09:33",
-        "busEmission": 57.382000000000005,
-        "lat": 38.7253,
-        "lng": -9.15,
-        "primary": "y"
     },
     {
         "name": "Antwerp",
@@ -348,18 +228,6 @@
         "primary": "n"
     },
     {
-        "name": "Brussels",
-        "flightTime": "00:05:05",
-        "flightEmission": 88.1,
-        "trainTime": "00:01:37",
-        "trainEmission": 4.1,
-        "busTime": "00:02:23",
-        "busEmission": 4.706,
-        "lat": 50.8465573,
-        "lng": 4.351697,
-        "primary": "y"
-    },
-    {
         "name": "Gent",
         "flightTime": "00:06:02",
         "flightEmission": 94.7,
@@ -370,30 +238,6 @@
         "lat": 51.053581,
         "lng": 3.722969,
         "primary": "n"
-    },
-    {
-        "name": "Luxembourg",
-        "flightTime": "00:05:16",
-        "flightEmission": 120.1,
-        "trainTime": "00:05:09",
-        "trainEmission": 9.7,
-        "busTime": "00:05:48",
-        "busEmission": 9.802000000000001,
-        "lat": 49.815273,
-        "lng": 6.129583,
-        "primary": "y"
-    },
-    {
-        "name": "Cologne",
-        "flightTime": "00:05:17",
-        "flightEmission": 115.89999999999999,
-        "trainTime": "00:03:27",
-        "trainEmission": 12.8,
-        "busTime": "00:04:53",
-        "busEmission": 7.826000000000001,
-        "lat": 50.937531,
-        "lng": 6.9602786,
-        "primary": "y"
     },
     {
         "name": "Dusseldorf",
@@ -444,18 +288,6 @@
         "primary": "n"
     },
     {
-        "name": "Hamburg",
-        "flightTime": "00:05:13",
-        "flightEmission": 141.20000000000002,
-        "trainTime": "00:05:51",
-        "trainEmission": 18.5,
-        "busTime": "00:07:33",
-        "busEmission": 13.650000000000002,
-        "lat": 53.5510846,
-        "lng": 9.9936818,
-        "primary": "y"
-    },
-    {
         "name": "Nuremberg",
         "flightTime": "00:05:15",
         "flightEmission": 117.7,
@@ -480,18 +312,6 @@
         "primary": "n"
     },
     {
-        "name": "Munich",
-        "flightTime": "00:05:58",
-        "flightEmission": 128.1,
-        "trainTime": "00:08:06",
-        "trainEmission": 132.5,
-        "busTime": "00:13:23",
-        "busEmission": 22.438,
-        "lat": 48.1351253,
-        "lng": 11.5819805,
-        "primary": "y"
-    },
-    {
         "name": "Dresden",
         "flightTime": "00:08:12",
         "flightEmission": 211.8,
@@ -502,18 +322,6 @@
         "lat": 51.0504088,
         "lng": 13.7372621,
         "primary": "n"
-    },
-    {
-        "name": "Berlin",
-        "flightTime": "00:05:19",
-        "flightEmission": 124.8,
-        "trainTime": "00:06:33",
-        "trainEmission": 21.7,
-        "busTime": "00:11:28",
-        "busEmission": 18.85,
-        "lat": 52.52,
-        "lng": 13.405,
-        "primary": "y"
     },
     {
         "name": "Leipzig",
@@ -564,18 +372,6 @@
         "primary": "n"
     },
     {
-        "name": "Zurich",
-        "flightTime": "00:05:33",
-        "flightEmission": 130.3,
-        "trainTime": "00:07:23",
-        "trainEmission": 21.8,
-        "busTime": "00:15:18",
-        "busEmission": 20.67,
-        "lat": 47.3744489,
-        "lng": 8.5410422,
-        "primary": "y"
-    },
-    {
         "name": "Basel",
         "flightTime": "00:05:26",
         "flightEmission": 121.5,
@@ -588,18 +384,6 @@
         "primary": "n"
     },
     {
-        "name": "Bern",
-        "flightTime": "00:08:10",
-        "flightEmission": 204.10000000000002,
-        "trainTime": "00:08:23",
-        "trainEmission": 21.8,
-        "busTime": "00:15:38",
-        "busEmission": 21.502,
-        "lat": 46.9481,
-        "lng": 7.4475,
-        "primary": "y"
-    },
-    {
         "name": "Lausanne",
         "flightTime": "00:06:32",
         "flightEmission": 134.5,
@@ -610,18 +394,6 @@
         "lat": 46.519962,
         "lng": 6.633597,
         "primary": "n"
-    },
-    {
-        "name": "Innsbruck",
-        "flightTime": "00:05:34",
-        "flightEmission": 136.20000000000002,
-        "trainTime": "00:10:17",
-        "trainEmission": 34.1,
-        "busTime": "00:17:18",
-        "busEmission": 25.194,
-        "lat": 47.2692124,
-        "lng": 11.4041024,
-        "primary": "n "
     },
     {
         "name": "Salzburg",
@@ -648,18 +420,6 @@
         "primary": "n"
     },
     {
-        "name": "Vienna",
-        "flightTime": "00:06:13",
-        "flightEmission": 163.5,
-        "trainTime": "00:11:39",
-        "trainEmission": 35.5,
-        "busTime": "00:20:08",
-        "busEmission": 30.836000000000002,
-        "lat": 48.2083537,
-        "lng": 16.3725042,
-        "primary": "y"
-    },
-    {
         "name": "Linz",
         "flightTime": "00:08:21",
         "flightEmission": 228.0,
@@ -682,18 +442,6 @@
         "lat": 45.070312,
         "lng": 7.6868565,
         "primary": "n"
-    },
-    {
-        "name": "Milan",
-        "flightTime": "00:05:49",
-        "flightEmission": 142.0,
-        "trainTime": "00:11:39",
-        "trainEmission": 28.9,
-        "busTime": "00:18:08",
-        "busEmission": 27.794,
-        "lat": 45.4668,
-        "lng": 9.1905,
-        "primary": "y"
     },
     {
         "name": "Genoa",
@@ -756,30 +504,6 @@
         "primary": "n"
     },
     {
-        "name": "Rome",
-        "flightTime": "00:08:54",
-        "flightEmission": 268.40000000000003,
-        "trainTime": "00:21:23",
-        "trainEmission": 73.4,
-        "busTime": "01:04:23",
-        "busEmission": 42.718,
-        "lat": 41.8933203,
-        "lng": 12.4829321,
-        "primary": "y"
-    },
-    {
-        "name": "Naples",
-        "flightTime": "00:06:28",
-        "flightEmission": 139.60000000000002,
-        "trainTime": "00:22:47",
-        "trainEmission": 82.4,
-        "busTime": "01:07:41",
-        "busEmission": 51.230000000000004,
-        "lat": 40.8517746,
-        "lng": 14.2681244,
-        "primary": "y"
-    },
-    {
         "name": "Cosenza",
         "flightTime": "00:10:14",
         "flightEmission": 308.3,
@@ -790,18 +514,6 @@
         "lat": 39.299999,
         "lng": 16.25,
         "primary": "n"
-    },
-    {
-        "name": "Florence",
-        "flightTime": "00:05:48",
-        "flightEmission": 102.3,
-        "trainTime": "00:19:24",
-        "trainEmission": 32.5,
-        "busTime": "01:00:53",
-        "busEmission": 35.984,
-        "lat": 43.7695604,
-        "lng": 11.2558136,
-        "primary": "y"
     },
     {
         "name": "Venice",
@@ -826,6 +538,378 @@
         "lat": 45.441586,
         "lng": 10.973442,
         "primary": "n"
+    },
+    {
+        "name": "Poznan",
+        "flightTime": "00:09:04",
+        "flightEmission": 268.0,
+        "trainTime": "00:12:12",
+        "trainEmission": 52.3,
+        "busTime": "00:15:38",
+        "busEmission": 24.752000000000002,
+        "lat": 52.409538,
+        "lng": 16.931992,
+        "primary": "n"
+    },
+    {
+        "name": "Split",
+        "flightTime": "00:06:10",
+        "flightEmission": 125.1,
+        "trainTime": "01:06:52",
+        "trainEmission": 59.3,
+        "busTime": "01:05:53",
+        "busEmission": 45.604,
+        "lat": 43.5116383,
+        "lng": 16.4399659,
+        "primary": "n"
+    },
+    {
+        "name": "Gdansk",
+        "flightTime": "00:05:39",
+        "flightEmission": 158.9,
+        "trainTime": "00:20:27",
+        "trainEmission": 80.1,
+        "busTime": "00:21:23",
+        "busEmission": 32.578,
+        "lat": 54.3520252,
+        "lng": 18.6466384,
+        "primary": "n"
+    },
+    {
+        "name": "Aarhus",
+        "flightTime": "00:06:49",
+        "flightEmission": 127.89999999999999,
+        "trainTime": "00:11:11",
+        "trainEmission": 36.8,
+        "busTime": "00:18:38",
+        "busEmission": 22.152,
+        "lat": 56.1496278,
+        "lng": 10.2134046,
+        "primary": "n"
+    },
+    {
+        "name": "Aalborg",
+        "flightTime": "00:09:31",
+        "flightEmission": 233.0,
+        "trainTime": "00:12:50",
+        "trainEmission": 43.0,
+        "busTime": "00:20:08",
+        "busEmission": 25.012,
+        "lat": 57.0462626,
+        "lng": 9.9215263,
+        "primary": "n"
+    },
+    {
+        "name": "Lund",
+        "flightTime": "00:06:06",
+        "flightEmission": 139.70000000000002,
+        "trainTime": "00:13:06",
+        "trainEmission": 43.7,
+        "busTime": "00:20:03",
+        "busEmission": 23.400000000000002,
+        "lat": 55.7046601,
+        "lng": 13.1910073,
+        "primary": "n"
+    },
+    {
+        "name": "Goteborg",
+        "flightTime": "00:05:48",
+        "flightEmission": 143.60000000000002,
+        "trainTime": "00:18:00",
+        "trainEmission": 42.5,
+        "busTime": "00:20:53",
+        "busEmission": 29.978,
+        "lat": 57.70887,
+        "lng": 11.97456,
+        "primary": "n"
+    },
+    {
+        "name": "Delft (departure location)",
+        "flightTime": "00:00:00",
+        "flightEmission": 0.0,
+        "trainTime": "00:00:00",
+        "trainEmission": 0.0,
+        "busTime": "00:00:00",
+        "busEmission": 0.0,
+        "lat": 52.0115769,
+        "lng": 4.3570677,
+        "primary": "d"
+    },
+    {
+        "name": "London",
+        "flightTime": "00:05:28",
+        "flightEmission": 127.8,
+        "trainTime": "00:04:20",
+        "trainEmission": 13.2,
+        "busTime": "00:11:03",
+        "busEmission": 14.222000000000001,
+        "lat": 51.5072,
+        "lng": -0.1275,
+        "primary": "y"
+    },
+    {
+        "name": "Bristol",
+        "flightTime": "00:05:26",
+        "flightEmission": 115.2,
+        "trainTime": "00:07:59",
+        "trainEmission": 23.7,
+        "busTime": "00:15:38",
+        "busEmission": 17.68,
+        "lat": 51.4536,
+        "lng": -2.5975,
+        "primary": "y"
+    },
+    {
+        "name": "Dublin",
+        "flightTime": "00:05:49",
+        "flightEmission": 115.3,
+        "trainTime": "00:00:00",
+        "trainEmission": 0.0,
+        "busTime": "00:00:00",
+        "busEmission": 0.0,
+        "lat": 53.3498053,
+        "lng": -6.2603097,
+        "primary": "y"
+    },
+    {
+        "name": "Paris",
+        "flightTime": "00:05:38",
+        "flightEmission": 102.0,
+        "trainTime": "00:02:55",
+        "trainEmission": 7.3,
+        "busTime": "00:07:22",
+        "busEmission": 12.298000000000002,
+        "lat": 48.8567,
+        "lng": 2.3522,
+        "primary": "y"
+    },
+    {
+        "name": "Bordeaux",
+        "flightTime": "00:05:59",
+        "flightEmission": 156.9,
+        "trainTime": "00:06:27",
+        "trainEmission": 11.4,
+        "busTime": "00:16:13",
+        "busEmission": 27.482,
+        "lat": 44.837789,
+        "lng": -0.57918,
+        "primary": "y"
+    },
+    {
+        "name": "Barcelona",
+        "flightTime": "00:06:16",
+        "flightEmission": 119.7,
+        "trainTime": "00:11:47",
+        "trainEmission": 18.8,
+        "busTime": "01:01:13",
+        "busEmission": 39.104,
+        "lat": 41.3828939,
+        "lng": 2.1774322,
+        "primary": "y"
+    },
+    {
+        "name": "Valencia",
+        "flightTime": "00:07:04",
+        "flightEmission": 175.8,
+        "trainTime": "00:14:39",
+        "trainEmission": 29.5,
+        "busTime": "01:05:48",
+        "busEmission": 51.854000000000006,
+        "lat": 39.4699075,
+        "lng": -0.3762881,
+        "primary": "y"
+    },
+    {
+        "name": "Madrid",
+        "flightTime": "00:06:19",
+        "flightEmission": 174.3,
+        "trainTime": "00:14:59",
+        "trainEmission": 36.2,
+        "busTime": "01:03:18",
+        "busEmission": 45.344,
+        "lat": 40.4167047,
+        "lng": -3.7035825,
+        "primary": "y"
+    },
+    {
+        "name": "Lisbon",
+        "flightTime": "00:07:04",
+        "flightEmission": 193.3,
+        "trainTime": "00:00:00",
+        "trainEmission": 0.0,
+        "busTime": "01:09:33",
+        "busEmission": 57.382000000000005,
+        "lat": 38.7253,
+        "lng": -9.15,
+        "primary": "y"
+    },
+    {
+        "name": "Brussels",
+        "flightTime": "00:05:05",
+        "flightEmission": 88.1,
+        "trainTime": "00:01:37",
+        "trainEmission": 4.1,
+        "busTime": "00:02:23",
+        "busEmission": 4.706,
+        "lat": 50.8465573,
+        "lng": 4.351697,
+        "primary": "y"
+    },
+    {
+        "name": "Luxembourg",
+        "flightTime": "00:05:16",
+        "flightEmission": 120.1,
+        "trainTime": "00:05:09",
+        "trainEmission": 9.7,
+        "busTime": "00:05:48",
+        "busEmission": 9.802000000000001,
+        "lat": 49.815273,
+        "lng": 6.129583,
+        "primary": "y"
+    },
+    {
+        "name": "Cologne",
+        "flightTime": "00:05:17",
+        "flightEmission": 115.89999999999999,
+        "trainTime": "00:03:27",
+        "trainEmission": 12.8,
+        "busTime": "00:04:53",
+        "busEmission": 7.826000000000001,
+        "lat": 50.937531,
+        "lng": 6.9602786,
+        "primary": "y"
+    },
+    {
+        "name": "Hamburg",
+        "flightTime": "00:05:13",
+        "flightEmission": 141.20000000000002,
+        "trainTime": "00:05:51",
+        "trainEmission": 18.5,
+        "busTime": "00:07:33",
+        "busEmission": 13.650000000000002,
+        "lat": 53.5510846,
+        "lng": 9.9936818,
+        "primary": "y"
+    },
+    {
+        "name": "Munich",
+        "flightTime": "00:05:58",
+        "flightEmission": 128.1,
+        "trainTime": "00:08:06",
+        "trainEmission": 132.5,
+        "busTime": "00:13:23",
+        "busEmission": 22.438,
+        "lat": 48.1351253,
+        "lng": 11.5819805,
+        "primary": "y"
+    },
+    {
+        "name": "Berlin",
+        "flightTime": "00:05:19",
+        "flightEmission": 124.8,
+        "trainTime": "00:06:33",
+        "trainEmission": 21.7,
+        "busTime": "00:11:28",
+        "busEmission": 18.85,
+        "lat": 52.52,
+        "lng": 13.405,
+        "primary": "y"
+    },
+    {
+        "name": "Zurich",
+        "flightTime": "00:05:33",
+        "flightEmission": 130.3,
+        "trainTime": "00:07:23",
+        "trainEmission": 21.8,
+        "busTime": "00:15:18",
+        "busEmission": 20.67,
+        "lat": 47.3744489,
+        "lng": 8.5410422,
+        "primary": "y"
+    },
+    {
+        "name": "Bern",
+        "flightTime": "00:08:10",
+        "flightEmission": 204.10000000000002,
+        "trainTime": "00:08:23",
+        "trainEmission": 21.8,
+        "busTime": "00:15:38",
+        "busEmission": 21.502,
+        "lat": 46.9481,
+        "lng": 7.4475,
+        "primary": "y"
+    },
+    {
+        "name": "Innsbruck",
+        "flightTime": "00:05:34",
+        "flightEmission": 136.20000000000002,
+        "trainTime": "00:10:17",
+        "trainEmission": 34.1,
+        "busTime": "00:17:18",
+        "busEmission": 25.194,
+        "lat": 47.2692124,
+        "lng": 11.4041024,
+        "primary": "n "
+    },
+    {
+        "name": "Vienna",
+        "flightTime": "00:06:13",
+        "flightEmission": 163.5,
+        "trainTime": "00:11:39",
+        "trainEmission": 35.5,
+        "busTime": "00:20:08",
+        "busEmission": 30.836000000000002,
+        "lat": 48.2083537,
+        "lng": 16.3725042,
+        "primary": "y"
+    },
+    {
+        "name": "Milan",
+        "flightTime": "00:05:49",
+        "flightEmission": 142.0,
+        "trainTime": "00:11:39",
+        "trainEmission": 28.9,
+        "busTime": "00:18:08",
+        "busEmission": 27.794,
+        "lat": 45.4668,
+        "lng": 9.1905,
+        "primary": "y"
+    },
+    {
+        "name": "Rome",
+        "flightTime": "00:08:54",
+        "flightEmission": 268.40000000000003,
+        "trainTime": "00:21:23",
+        "trainEmission": 73.4,
+        "busTime": "01:04:23",
+        "busEmission": 42.718,
+        "lat": 41.8933203,
+        "lng": 12.4829321,
+        "primary": "y"
+    },
+    {
+        "name": "Naples",
+        "flightTime": "00:06:28",
+        "flightEmission": 139.60000000000002,
+        "trainTime": "00:22:47",
+        "trainEmission": 82.4,
+        "busTime": "01:07:41",
+        "busEmission": 51.230000000000004,
+        "lat": 40.8517746,
+        "lng": 14.2681244,
+        "primary": "y"
+    },
+    {
+        "name": "Florence",
+        "flightTime": "00:05:48",
+        "flightEmission": 102.3,
+        "trainTime": "00:19:24",
+        "trainEmission": 32.5,
+        "busTime": "01:00:53",
+        "busEmission": 35.984,
+        "lat": 43.7695604,
+        "lng": 11.2558136,
+        "primary": "y"
     },
     {
         "name": "Prague",
@@ -864,18 +948,6 @@
         "primary": "y"
     },
     {
-        "name": "Poznan",
-        "flightTime": "00:09:04",
-        "flightEmission": 268.0,
-        "trainTime": "00:12:12",
-        "trainEmission": 52.3,
-        "busTime": "00:15:38",
-        "busEmission": 24.752000000000002,
-        "lat": 52.409538,
-        "lng": 16.931992,
-        "primary": "n"
-    },
-    {
         "name": "Bratislava",
         "flightTime": "00:08:33",
         "flightEmission": 245.5,
@@ -912,18 +984,6 @@
         "primary": "y"
     },
     {
-        "name": "Split",
-        "flightTime": "00:06:10",
-        "flightEmission": 125.1,
-        "trainTime": "01:06:52",
-        "trainEmission": 59.3,
-        "busTime": "01:05:53",
-        "busEmission": 45.604,
-        "lat": 43.5116383,
-        "lng": 16.4399659,
-        "primary": "n"
-    },
-    {
         "name": "Bucharest",
         "flightTime": "00:09:31",
         "flightEmission": 300.40000000000003,
@@ -934,18 +994,6 @@
         "lat": 44.4267674,
         "lng": 26.1025384,
         "primary": "y"
-    },
-    {
-        "name": "Gdansk",
-        "flightTime": "00:05:39",
-        "flightEmission": 158.9,
-        "trainTime": "00:20:27",
-        "trainEmission": 80.1,
-        "busTime": "00:21:23",
-        "busEmission": 32.578,
-        "lat": 54.3520252,
-        "lng": 18.6466384,
-        "primary": "n"
     },
     {
         "name": "Sofia",
@@ -960,30 +1008,6 @@
         "primary": "y"
     },
     {
-        "name": "Aarhus",
-        "flightTime": "00:06:49",
-        "flightEmission": 127.89999999999999,
-        "trainTime": "00:11:11",
-        "trainEmission": 36.8,
-        "busTime": "00:18:38",
-        "busEmission": 22.152,
-        "lat": 56.1496278,
-        "lng": 10.2134046,
-        "primary": "n"
-    },
-    {
-        "name": "Aalborg",
-        "flightTime": "00:09:31",
-        "flightEmission": 233.0,
-        "trainTime": "00:12:50",
-        "trainEmission": 43.0,
-        "busTime": "00:20:08",
-        "busEmission": 25.012,
-        "lat": 57.0462626,
-        "lng": 9.9215263,
-        "primary": "n"
-    },
-    {
         "name": "Copenhagen",
         "flightTime": "00:05:28",
         "flightEmission": 135.3,
@@ -994,30 +1018,6 @@
         "lat": 55.6760968,
         "lng": 12.5683371,
         "primary": "y"
-    },
-    {
-        "name": "Lund",
-        "flightTime": "00:06:06",
-        "flightEmission": 139.70000000000002,
-        "trainTime": "00:13:06",
-        "trainEmission": 43.7,
-        "busTime": "00:20:03",
-        "busEmission": 23.400000000000002,
-        "lat": 55.7046601,
-        "lng": 13.1910073,
-        "primary": "n"
-    },
-    {
-        "name": "Goteborg",
-        "flightTime": "00:05:48",
-        "flightEmission": 143.60000000000002,
-        "trainTime": "00:18:00",
-        "trainEmission": 42.5,
-        "busTime": "00:20:53",
-        "busEmission": 29.978,
-        "lat": 57.70887,
-        "lng": 11.97456,
-        "primary": "n"
     },
     {
         "name": "Stockholm",

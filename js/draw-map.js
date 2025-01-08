@@ -60,6 +60,6 @@ function drawMap(data) {
         .attr("fill", fillColor)
         .attr("stroke", "var(--white-color)")
         .attr("stroke-width", 0.5)
-        .attr("class", "land"); // Create the class land
+        .attr("class", "land");
 }
 
