@@ -29,11 +29,9 @@ function zoomed(event) {
     // Pas alleen de paden (landgebieden) aan
     svg.selectAll("path").attr("transform", event.transform);
 
-    // Voor de steden en labels projecteren we opnieuw
     svg.selectAll(".city-group")
         .attr("transform", d => {
             const coords = projection([d.lng, d.lat]);
-            // Pas de nieuwe zoom-transformatie toe op de geprojecteerde coördinaten
             return `translate(${event.transform.applyX(coords[0])}, ${event.transform.applyY(coords[1])})`;
         });
 
@@ -44,7 +42,7 @@ function zoomed(event) {
 // Load the TopoJSON file
 d3.json("data/map.topojson").then(function(data) {
     drawMap(data); 
-    loadDelft()
+    loadDelft();
     loadCities();
 }).catch(function(error) {
     console.error("Error loading the TopoJSON file:", error);

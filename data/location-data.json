@@ -1,5 +1,17 @@
 [
     {
+        "name": "Delft (departure location)",
+        "flightTime": "00:00:00",
+        "flightEmission": 0.0,
+        "trainTime": "00:00:00",
+        "trainEmission": 0.0,
+        "busTime": "00:00:00",
+        "busEmission": 0.0,
+        "lat": 52.0115769,
+        "lng": 4.3570677,
+        "primary": "d"
+    },
+    {
         "name": "London",
         "flightTime": "00:05:28",
         "flightEmission": 127.8,

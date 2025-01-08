@@ -10,7 +10,7 @@ function loadCities() {
 function drawCitiesWithLabels(cityData) {
     const cityGroups = svg.selectAll(".city-group")
         .data(cityData)
-        .enter().append("g")  // Voeg een 'g' element toe voor elke stad
+        .enter().append("g")
         .attr("class", "city-group")
         .attr("transform", d => {
             const coords = projection([d.lng, d.lat]);
@@ -22,10 +22,10 @@ function drawCitiesWithLabels(cityData) {
         .raise();  // Brengt de markers naar voren;
 
     cityGroups.append("circle")
-        .attr("class", "city")
-        .attr("r", 8); 
+        .attr("class", d => d.primary === 'd' ? "city-delft" : "city")
+        .attr("r", 8);
 
-    cityGroups.filter(d => d.primary === 'y')
+    cityGroups.filter(d => d.primary === 'y' || d.primary === 'd')
         .append("text")
         .attr("class", "city-label")
         .attr("x", 11) // Zet de positie van de label naast de stad
