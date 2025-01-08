@@ -42,7 +42,7 @@ function zoomed(event) {
 }
 
 // Load the TopoJSON file
-d3.json("../data/map.topojson").then(function(data) {
+d3.json("data/map.topojson").then(function(data) {
     drawMap(data); 
     loadDelft()
     loadCities();
