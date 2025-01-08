@@ -1,4 +1,10 @@
 /* Al deze elementen worden aangemaakt in city-marker.js en zijn dus niet te vinden index.html*/
+.delft-marker{
+    fill: var(--marker-color);
+    stroke: var(--black-color);
+    stroke-width: 1.5;   
+}
+
 .city {
     fill: var(--marker-color);
     stroke: var(--black-color);
