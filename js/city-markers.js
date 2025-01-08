@@ -1,6 +1,8 @@
 function loadCities() {
     d3.json("data/location-data.json").then(function(cityData) {
         drawCitiesWithLabels(cityData); // Groepeert steden en labels samen
+        searchCities(cityData);
+        
     }).catch(function(error) {
         console.error("Error loading the cities JSON file:", error);
     });

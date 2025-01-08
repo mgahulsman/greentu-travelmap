@@ -2,6 +2,7 @@ let planeInterval;
 let trainInterval;
 let busInterval
 
+
 function showPopup(cityData) {
     const popup = document.getElementById('popup');
     const title = document.getElementById('popup-title');

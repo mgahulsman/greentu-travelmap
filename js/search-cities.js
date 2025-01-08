@@ -1,56 +1,71 @@
-// const searchInput = document.getElementById('search-input');
-// const dropdown = document.getElementById('dropdown');
+function searchCities(cityData) {
+  const cityNames = cityData.map(city => city.name);
+  const searchInput = document.getElementById('search-input');
+  const dropdown = document.getElementById('dropdown');
+  const dropdownList = dropdown.querySelector('ul');
 
-// searchInput.addEventListener('input', function(event) {
-//   const searchText = event.target.value.toLowerCase();
+  searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    const filterCities = cityNames.filter(city => city.toLowerCase().includes(searchTerm));
 
-//   // Gebruik de citiesData die al in city-markers.js is geladen
-//   const filteredCities = citiesData.filter(city => 
-//     city.name.toLowerCase().includes(searchText)
-//   );
+    dropdownList.innerHTML = '';
 
-//   // Maak de dropdown leeg
-//   dropdown.innerHTML = '';
+    filterCities.forEach(city => {
+      const listItem = document.createElement('li');
+      listItem.textContent = city;
+      listItem.classList.add('dropdown-item'); 
 
-//   // Voeg de gefilterde steden toe aan de dropdown
-//   filteredCities.forEach(city => {
-//     const option = document.createElement('div');
-//     option.textContent = city.name;
-//     option.classList.add('dropdown-item');
+      listItem.addEventListener('click', () => {
+        const selectedCityData = cityData.find(item => item.name === city); 
+        showPopup(selectedCityData); 
+      });
 
-//     option.addEventListener('click', () => {
-//       searchInput.value = city.name;
-//       dropdown.innerHTML = '';
-//       // Voer hier eventueel verdere acties uit, zoals het zoomen naar de stad
-//     });
+      dropdownList.appendChild(listItem);
+    });
 
-//     dropdown.appendChild(option);
-//   });
+    dropdown.style.display = filterCities.length > 0 ? 'block' : 'none';
 
-//   // Toon of verberg de dropdown
-//   dropdown.style.display = filteredCities.length > 0 ? 'block' : 'none';
-// });
+    function searchCities(cityData) {
+      const cityNames = cityData.map(city => city.name);
+      const searchInput = document.getElementById('search-input');
+      const dropdown = document.getElementById('dropdown');
+      const dropdownList = dropdown.querySelector('ul');
+    
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filterCities = cityNames.filter(city => city.toLowerCase().includes(searchTerm));
+    
+        dropdownList.innerHTML = '';
+    
+        filterCities.forEach(city => {
+          const listItem = document.createElement('li');
+          listItem.textContent = city;
+          listItem.classList.add('dropdown-item'); 
+    
+          listItem.addEventListener('click', () => {
+            const selectedCityData = cityData.find(item => item.name === city); 
+            showPopup(selectedCityData); 
+          });
+    
+          dropdownList.appendChild(listItem);
+        });
+    
+        dropdown.style.display = filterCities.length > 0 ? 'block' : 'none'; 
+      });
+    };
+    
+    // Ways to remove the dropdown
+    document.addEventListener('click', (event) => {
+      if (!dropdown.contains(event.target) && event.target !== searchInput) {
+        dropdown.style.display = 'none';
+      }
+    });
 
-const steden = [
-  "Amsterdam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven", "Groningen", "Tilburg", "Almere", "Breda", "Nijmegen"
-];
-
-const searchInput = document.getElementById('search-input');
-const dropdown = document.getElementById('dropdown');
-const dropdownList = dropdown.querySelector('ul');
-
-searchInput.addEventListener('input', () => {
-  const searchTerm = searchInput.value.toLowerCase();
-  const filteredSteden = steden.filter(stad => stad.toLowerCase().includes(searchTerm));
-
-  dropdownList.innerHTML = ''; 
-
-  filteredSteden.forEach(stad => {
-    const listItem = document.createElement('li');
-    listItem.textContent = stad;
-    listItem.classList.add('dropdown-item'); 
-    dropdownList.appendChild(listItem);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        dropdown.style.display = 'none';
+      }
+    });
   });
+};
 
-  dropdown.style.display = filteredSteden.length > 0 ? 'block' : 'none'; 
-});
