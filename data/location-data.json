@@ -1,5 +1,17 @@
 [
     {
+        "name": "Delft (departure location)",
+        "flightTime": "00:00:00",
+        "flightEmission": 0.0,
+        "trainTime": "00:00:00",
+        "trainEmission": 0.0,
+        "busTime": "00:00:00",
+        "busEmission": 0.0,
+        "lat": 52.0115769,
+        "lng": 4.3570677,
+        "primary": "y"
+    },
+    {
         "name": "London",
         "flightTime": "00:05:28",
         "flightEmission": 127.8,
@@ -81,7 +93,7 @@
         "busEmission": 0.0,
         "lat": 53.3498053,
         "lng": -6.2603097,
-        "primary": "n"
+        "primary": "y"
     },
     {
         "name": "Belfast",
@@ -321,7 +333,7 @@
         "busEmission": 3.432,
         "lat": 51.2194475,
         "lng": 4.4024643,
-        "primary": "y"
+        "primary": "n"
     },
     {
         "name": "Leuven",
@@ -345,7 +357,7 @@
         "busEmission": 4.706,
         "lat": 50.8465573,
         "lng": 4.351697,
-        "primary": "n"
+        "primary": "y"
     },
     {
         "name": "Gent",
@@ -360,7 +372,7 @@
         "primary": "n"
     },
     {
-        "name": "Luxemburg",
+        "name": "Luxembourg",
         "flightTime": "00:05:16",
         "flightEmission": 120.1,
         "trainTime": "00:05:09",
@@ -372,7 +384,7 @@
         "primary": "y"
     },
     {
-        "name": "Keulen",
+        "name": "Cologne",
         "flightTime": "00:05:17",
         "flightEmission": 115.89999999999999,
         "trainTime": "00:03:27",
@@ -468,7 +480,7 @@
         "primary": "n"
     },
     {
-        "name": "M\u00fcnchen",
+        "name": "Munich",
         "flightTime": "00:05:58",
         "flightEmission": 128.1,
         "trainTime": "00:08:06",
@@ -585,7 +597,7 @@
         "busEmission": 21.502,
         "lat": 46.9481,
         "lng": 7.4475,
-        "primary": "n"
+        "primary": "y"
     },
     {
         "name": "Lausanne",
@@ -645,7 +657,7 @@
         "busEmission": 30.836000000000002,
         "lat": 48.2083537,
         "lng": 16.3725042,
-        "primary": "n"
+        "primary": "y"
     },
     {
         "name": "Linz",

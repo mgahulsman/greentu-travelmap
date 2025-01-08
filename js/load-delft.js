@@ -8,9 +8,9 @@ function loadDelft() {
     
     // Voeg de SVG in als marker
     delft.append("image")
-        .attr("xlink:href", "./assets/other/ewi.svg")
-        .attr("x", delftCoords[0]) 
-        .attr("y", delftCoords[1] - 50) 
-        .attr("width", 30) 
+        .attr("xlink:href", "./assets/other/aula.svg")
+        .attr("x", delftCoords[0]- 140) 
+        .attr("y", delftCoords[1] - 65) 
+        .attr("width", 300) 
         .attr("height", 70) 
 }
