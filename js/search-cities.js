@@ -1,5 +1,7 @@
 function searchCities(cityData) {
-  const cityNames = cityData.map(city => city.name);
+  const cityNames = cityData
+    .filter(city => city.primary !== 'd') // Filter Delft eruit
+    .map(city => city.name);
   const searchInput = document.getElementById('search-input');
   const dropdown = document.getElementById('dropdown');
   const dropdownList = dropdown.querySelector('ul');
