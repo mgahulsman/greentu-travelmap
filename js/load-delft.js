@@ -7,9 +7,9 @@ function loadDelft() {
         .raise();
     
     delft.append("image")
-        .attr("xlink:href", "./assets/other/aula.svg")
+        .attr("xlink:href", "./assets/other/travelers.svg")
         .attr("x", delftCoords[0] - 140)
         .attr("y", delftCoords[1] - 65)
-        .attr("width", 300)
-        .attr("height", 70);
+        .attr("width", 30)
+        .attr("height", 30);
 }
