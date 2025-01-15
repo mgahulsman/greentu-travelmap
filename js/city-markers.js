@@ -27,15 +27,15 @@ function drawCitiesWithLabels(cityData) {
 
     cityGroups.filter(d => d.primary === 'd') 
         .append("image")  // Voeg een image element toe
-        .attr("xlink:href", "./assets/other/travelers.svg")
-        .attr("x", -25) 
-        .attr("y", -35)
-        .attr("width", 50);
+        .attr("xlink:href", "./assets/other/libary.svg")
+        .attr("x", -10) 
+        .attr("y", -33)
+        .attr("width", 30);
 
     cityGroups.filter(d => d.primary === 'd')
         .append("text")
         .attr("class", "city-label")
-        .attr("x", 20) 
+        .attr("x", 25) 
         .attr("y", 5)  
         .text(d => d.name);
 
