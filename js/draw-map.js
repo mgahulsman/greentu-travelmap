@@ -42,6 +42,7 @@ function zoomed(event) {
 // Load the TopoJSON file
 d3.json("data/map.topojson").then(function(data) {
     drawMap(data); 
+    loadDelft();
     loadCities();
 }).catch(function(error) {
     console.error("Error loading the TopoJSON file:", error);
@@ -61,6 +62,4 @@ function drawMap(data) {
         .attr("stroke-width", 0.5)
         .attr("class", "land");
 }
-
-
 
