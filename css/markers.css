@@ -3,9 +3,11 @@
     fill: var(--delft-marker-color);
     stroke: var(--black-color);
     stroke-width: 1.5; 
+    r:0;
 }
 
 .city {
+    r: 8px;
     fill: var(--marker-color);
     stroke: var(--black-color);
     stroke-width: 1.5;

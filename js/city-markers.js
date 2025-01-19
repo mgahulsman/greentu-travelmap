@@ -21,14 +21,32 @@ function drawCitiesWithLabels(cityData) {
         })
         .raise();  // Brengt de markers naar voren;
 
-    cityGroups.append("circle")
-        .attr("class", d => d.primary === 'd' ? "city-delft" : "city")
-        .attr("r", 8);
+    cityGroups.filter(d => d.primary !== 'd')  // Filter de data waar primary niet 'd' is
+        .append("circle")
+        .attr("class", "city"); 
 
-    cityGroups.filter(d => d.primary === 'y' || d.primary === 'd')
+    cityGroups.filter(d => d.primary === 'd') 
+        .append("image")  // Voeg een image element toe
+        .attr("xlink:href", "./assets/other/libary.svg")
+        .attr("x", -10) 
+        .attr("y", -33)
+        .attr("width", 30);
+
+    cityGroups.filter(d => d.primary === 'd')
+        .append("text")
+        .attr("class", "city-label")
+        .attr("x", 25) 
+        .attr("y", 5)  
+        .text(d => d.name);
+
+
+    cityGroups.filter(d => d.primary === 'y')
         .append("text")
         .attr("class", "city-label")
         .attr("x", 11) // Zet de positie van de label naast de stad
         .attr("y", 5)  // Zet de positie van de label iets lager
         .text(d => d.name);
+}
+
+function loadDelft() {
 }
