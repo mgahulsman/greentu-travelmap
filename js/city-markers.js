@@ -47,6 +47,3 @@ function drawCitiesWithLabels(cityData) {
         .attr("y", 5)  // Zet de positie van de label iets lager
         .text(d => d.name);
 }
-
-function loadDelft() {
-}
