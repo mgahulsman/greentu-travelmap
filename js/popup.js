@@ -73,7 +73,7 @@ function animateProgressBar(selector, initialWidth, finalWidth) {
               width++;
               elem.style.width = width + "%";
           }
-      }, 1); // Pas de interval aan voor snelheidscontrole (bijv. 20, 30, etc.)
+      }, 1); // Pas de interval aan voor snelheidscontrole
   } else {
       elem.style.width = width + "%";
   }

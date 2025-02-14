@@ -21,12 +21,12 @@ function drawCitiesWithLabels(cityData) {
         })
         .raise();  // Brengt de markers naar voren;
 
-    cityGroups.filter(d => d.primary !== 'd')  // Filter de data waar primary niet 'd' is
+    cityGroups.filter(d => d.primary !== 'd')  
         .append("circle")
         .attr("class", "city"); 
 
     cityGroups.filter(d => d.primary === 'd') 
-        .append("image")  // Voeg een image element toe
+        .append("image") 
         .attr("xlink:href", "./assets/other/libary.svg")
         .attr("x", -10) 
         .attr("y", -33)
